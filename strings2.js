@@ -8,10 +8,17 @@
 	function nextItem(items, elem){
 		//your code is here
 		for (var i = 0; i < items.length; i++) {
-			if(items[i]=elem){
-				return items[i+1]
-			}
+			if(items[i]===elem){
+				if(items[i+1] !== undefined){
+					return (items[i+1])
+
+				} else{
+					return null;
+				}
+
+		} else{
 			return null;
+			}
 		}
 	}
 
